@@ -6,8 +6,7 @@
 function arrayOfMultiples (num, length) {
     var result = []
     for (let i = 1; i <= length; i++) {
-        console.log(length, 'length')
-        console.log(i, 'i')
+      
         result.push(num*i)
         
     }
@@ -57,3 +56,34 @@ const sevenBoom =(arr) =>{
 }
 
 sevenBoom([1, 2, 3, 4, 5, 6, 7])
+
+
+
+// Given two numbers, return true if the sum of both 
+// numbers is less than 100. Otherwise return false.
+
+
+
+function lessThan100(a, b) {
+	const sum = a+b;
+	if(sum >= 100){
+		return false
+	} else {
+		return true
+	}
+}
+
+
+console.log(lessThan100(22, 15));
+
+
+//Write a function that returns the length of a string. Make your function recursive.
+
+function length(str) {
+	return str.length;
+	length(str)
+}
+
+length('apple');
+
+
