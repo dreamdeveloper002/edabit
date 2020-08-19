@@ -87,3 +87,23 @@ function length(str) {
 length('apple');
 
 
+function getLength(arr) {
+	let count = 0;
+	arr.forEach(item => {
+		   //console.log('1', item)
+		if (Array.isArray(item)) {
+			//console.log('item', count)
+			//console.log('length', getLength(item))
+			count += getLength(item);
+			console.log('count1', count)
+			//console.log('length', getLength(item))
+		} else {
+			count++;
+			//console.log('count2', count)
+		}
+	});
+	return count;
+}
+
+
+console.log('result', getLength([1, [2, 3]]));
