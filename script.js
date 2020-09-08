@@ -147,3 +147,11 @@ function profitableGamble(prob, prize, pay) {
 }
 
 console.log(profitableGamble(0.2, 50, 9));
+
+
+//Create a function that concatenates n input arrays, where n is variable.
+function concat(...args) {
+	return [].concat(...args);
+}
+
+console.log(concat([1, 2, 3], [4, 5], [6, 7]));
