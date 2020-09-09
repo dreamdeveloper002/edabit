@@ -155,3 +155,12 @@ function concat(...args) {
 }
 
 console.log(concat([1, 2, 3], [4, 5], [6, 7]));
+
+
+//Create a function that takes an integer and return true if it's divisible by 100, otherwise return false
+
+function divisible(num) {
+	return (num % 100) === 0 ? true : false;
+}
+
+divisible(1)
