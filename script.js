@@ -158,9 +158,16 @@ console.log(concat([1, 2, 3], [4, 5], [6, 7]));
 
 
 //Create a function that takes an integer and return true if it's divisible by 100, otherwise return false
-
 function divisible(num) {
 	return (num % 100) === 0 ? true : false;
 }
 
 divisible(1)
+
+
+//Create a function that returns true if an integer is evenly divisible by 5, and false otherwise
+function divisibleByFive(n) {
+	return n%5 === 0 ? true : false;
+}
+
+divisibleByFive(5)
