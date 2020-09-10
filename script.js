@@ -171,3 +171,24 @@ function divisibleByFive(n) {
 }
 
 divisibleByFive(5)
+
+
+//Write a function that converts an object into an array of keys and values
+
+function objectToArray(obj) {
+	return Object.entries(obj);
+}
+
+objectToArray({
+  D: 1,
+  B: 2,
+  C: 3
+})
+
+//Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise
+
+function dividesEvenly(a, b) {
+	return (a % b === 0)? true : false;
+}
+
+dividesEvenly(98, 7)
