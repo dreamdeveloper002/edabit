@@ -229,3 +229,11 @@ function dashed(str) {
 //const dashed = str =>	str.replace(/([aeiou])/gi, '-$1-')
 
 dashed("Carpe Diem")
+
+
+//Write a function that accepts base (decimal), height (decimal) and shape ("triangle", "parallelogram") as input and calculates the area of that shape.
+function areaShape(base,height,shape) {
+	return (shape === 'triangle' ? 0.5 : 1) * base * height;
+}
+
+areaShape(2, 3, "triangle")
