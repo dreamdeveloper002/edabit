@@ -203,3 +203,11 @@ function getVoteCount(votes) {
 
 
 getVoteCount({ upvotes: 13, downvotes: 0 })
+
+//Write a function to reverse an array.
+
+function reverse(arr) {
+	return arr.reverse();
+}
+
+reverse([1, 2, 3, 4])
