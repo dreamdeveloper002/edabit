@@ -259,3 +259,9 @@ getDays(
   new Date("June 20, 2019")
 );
 
+//Create a function that takes an equation (e.g. "1+1"), and returns the answer.
+function equation(s) {
+	return eval(s);
+}
+
+equation("7*4-2")
