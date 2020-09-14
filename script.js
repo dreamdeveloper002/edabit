@@ -246,3 +246,16 @@ function arrayToString(arr) {
 }
 
 arrayToString([1, 2, 3, 4, 5, 6])
+
+
+//Create a function that takes two dates and returns the number of days between the first and second date.
+
+function getDays(date1, date2) {
+	return new Date(date2 - date1).getDate() - 1
+}
+
+getDays(
+  new Date("June 14, 2019"),
+  new Date("June 20, 2019")
+);
+
