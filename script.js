@@ -237,3 +237,12 @@ function areaShape(base,height,shape) {
 }
 
 areaShape(2, 3, "triangle")
+
+
+//Create a function that takes an array of numbers or letters and returns a string
+
+function arrayToString(arr) {
+	return arr.join('')
+}
+
+arrayToString([1, 2, 3, 4, 5, 6])
