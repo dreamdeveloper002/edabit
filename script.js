@@ -265,3 +265,11 @@ function equation(s) {
 }
 
 equation("7*4-2")
+
+//Create a function that accepts an array and returns the last item in the array.
+
+function getLastItem(arr) {
+  return arr[arr.length - 1]
+}
+
+getLastItem([1, 2, 3])
