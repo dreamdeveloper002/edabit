@@ -338,4 +338,8 @@ function numbersSum(arr) {
 
 numbersSum([1, 2, "13", "4", "645"])
 
+//The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
 
+const remainder = (x, y) => x % y
+
+remainder(3, 4) 
