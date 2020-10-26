@@ -343,3 +343,13 @@ numbersSum([1, 2, "13", "4", "645"])
 const remainder = (x, y) => x % y
 
 remainder(3, 4) 
+
+
+//Create a function that sorts the array according to the "content of the elements"
+
+
+function sortIt(arr) {
+	return arr.sort((a, b) => a - b);
+}
+
+sortIt([4, 1, 3]);
