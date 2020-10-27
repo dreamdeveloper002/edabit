@@ -353,3 +353,10 @@ function sortIt(arr) {
 }
 
 sortIt([4, 1, 3]);
+
+
+//Create a function that takes the age and return the age in days.
+
+const calcAge = age => age * 365;
+
+calcAge(65);
