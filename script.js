@@ -384,3 +384,16 @@ function numInStr(arr) {
 }
 
 numInStr(["1a", "a", "2b", "b"])
+
+
+//Create a function that takes two "sorted" arrays of numbers and returns an array of numbers which are common to both the input arrays
+function commonElements(arr1, arr2) {
+	var output = [];
+	for(var i = 0; i < arr1.length; i++){
+		 if(arr2.indexOf(arr1[i]) > -1 && output.indexOf(arr1[i]) === -1) output.push(arr1[i]);
+	}
+	return output;
+}
+
+
+commonElements([1, 3, 4, 6, 7, 9], [1, 2, 3, 4, 7, 10])
