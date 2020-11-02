@@ -397,3 +397,14 @@ function commonElements(arr1, arr2) {
 
 
 commonElements([1, 3, 4, 6, 7, 9], [1, 2, 3, 4, 7, 10])
+
+
+//Create a function that takes a variable number of arguments, each argument representing the number of items in a group, 
+//and returns the number of permutations (combinations) of items that you could get by taking one item from each group.
+
+
+function combinations(items) {
+	return [...arguments].reduce((acc,item) => item===0 ? acc : acc*item)
+}
+
+combinations(3, 7, 4);
