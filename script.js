@@ -408,3 +408,18 @@ function combinations(items) {
 }
 
 combinations(3, 7, 4);
+
+//Write a function that returns the minimum number of swaps to convert the first binary string into the second.
+
+
+function minSwaps(s1, s2) {
+	let count = 0;
+	for(let i = 0; i < s1.length; i++){
+		if(s1[i] !== s2[i]){
+			count++;
+		}
+	}
+	return count/2;
+};
+
+minSwaps("1100", "1001");
