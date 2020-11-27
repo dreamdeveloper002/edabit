@@ -423,3 +423,14 @@ function minSwaps(s1, s2) {
 };
 
 minSwaps("1100", "1001");
+
+
+//Create a function which returns the number of true values there are in an array.
+
+
+function countTrue(arr) {
+	return arr.filter(x=>x==true).length
+}
+
+
+countTrue([true, false, false, true, false])
