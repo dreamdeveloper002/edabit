@@ -434,3 +434,13 @@ function countTrue(arr) {
 
 
 countTrue([true, false, false, true, false])
+
+//Write a function redundant that takes in a string str and returns a function that returns str.
+
+
+function redundant(str) {
+	return () => str;
+};
+
+const f2 = redundant("pear")
+f2();
