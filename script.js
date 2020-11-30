@@ -444,3 +444,12 @@ function redundant(str) {
 
 const f2 = redundant("pear")
 f2();
+
+
+//Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
+
+function parseArray(arr) {
+	return arr.map(String);
+};
+
+parseArray([1, 2, "a", "b"]);
