@@ -467,3 +467,21 @@ function maxNum(n1,n2) {
 };
 
 maxNum(1000, 400);
+
+
+//Write a function that does the following for the given values: add, subtract, divide and multiply
+
+
+function operation(a, b, op) {
+	let c = parseInt(a)
+	let d = parseInt(b)
+	let e = op=="add"?c+d
+	:op=="subtract"?c-d
+	:op=="multiply"?c*d
+	:c/d
+	
+	return e==Infinity?"undefined":e
+
+}
+
+operation("1",  "2",  "add" );
