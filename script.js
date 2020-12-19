@@ -504,3 +504,11 @@ function concat(...args) {
 }
 
 concat([1, 2, 3], [4, 5], [6, 7]);
+
+//Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+
+const arrayOfMultiples = (num, length) => {
+	return Array.from({length: length}, (_, i) => num * (i + 1));
+}
+
+arrayOfMultiples(7, 5);
