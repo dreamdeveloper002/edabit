@@ -530,3 +530,18 @@ function arrayOfMultiples (num, length) {
 
 
 arrayOfMultiples(5, 6);
+
+
+
+//create a function that takes an array and returns the sum of all numbers in the array.
+
+function numbersSum(arr) {
+	let sum = 0;
+	for( let i = 0; i < arr.length; i++ ) {
+		if(typeof(arr[i]) !== "number") {
+			continue;
+		}
+		sum += arr[i];
+	}
+	return sum;
+}
