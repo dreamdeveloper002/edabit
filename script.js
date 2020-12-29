@@ -226,7 +226,7 @@ function dashed(str) {
 }
 
 
-//const dashed = str =>	str.replace(/([aeiou])/gi, '-$1-')
+
 
 dashed("Carpe Diem")
 
@@ -569,4 +569,21 @@ function profitableGamble(prob, prize, pay) {
 	}
 }
 
-console.log(profitableGamble(0.2, 50, 9));
+profitableGamble(0.2, 50, 9);
+
+//Create a function that takes a string and returns dashes on the left and right side of every vowel (a e i o u).
+
+function dashed(str) {
+	let vow = 'aeiouAEIOU'
+	let s=''
+	for(let i=0;i<str.length;i++){
+		if(vow.includes(str[i]))s+='-' + str[i] + '-'
+		else s+=str[i]
+	}
+	return s
+}
+
+
+//const dashed = str =>	str.replace(/([aeiou])/gi, '-$1-')
+
+dashed("Carpe Diem")
